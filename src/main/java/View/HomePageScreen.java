@@ -42,6 +42,7 @@ public class HomePageScreen extends javax.swing.JFrame {
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         jPanel1 = new javax.swing.JPanel();
         HomePageScreen = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         homeBtn = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -61,15 +62,23 @@ public class HomePageScreen extends javax.swing.JFrame {
 
         jPanel1.setLayout(new java.awt.CardLayout());
 
+        jLabel1.setText("Sistema de Gerenciamento de Vendas");
+
         javax.swing.GroupLayout HomePageScreenLayout = new javax.swing.GroupLayout(HomePageScreen);
         HomePageScreen.setLayout(HomePageScreenLayout);
         HomePageScreenLayout.setHorizontalGroup(
             HomePageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 817, Short.MAX_VALUE)
+            .addGroup(HomePageScreenLayout.createSequentialGroup()
+                .addGap(282, 282, 282)
+                .addComponent(jLabel1)
+                .addContainerGap(337, Short.MAX_VALUE))
         );
         HomePageScreenLayout.setVerticalGroup(
             HomePageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 543, Short.MAX_VALUE)
+            .addGroup(HomePageScreenLayout.createSequentialGroup()
+                .addGap(233, 233, 233)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(286, Short.MAX_VALUE))
         );
 
         jPanel1.add(HomePageScreen, "HomeCard");
@@ -245,6 +254,7 @@ public class HomePageScreen extends javax.swing.JFrame {
     private javax.swing.JMenu backupBtn;
     private javax.swing.JMenu homeBtn;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
