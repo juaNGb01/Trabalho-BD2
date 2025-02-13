@@ -134,33 +134,15 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="backUpBtn" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="664" max="32767" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="817" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                      <Component id="backUpBtn" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="463" max="32767" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="543" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JButton" name="backUpBtn">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Realizar BackUp"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backUpBtnActionPerformed"/>
-              </Events>
-            </Component>
-          </SubComponents>
         </Container>
       </SubComponents>
     </Container>

@@ -42,7 +42,6 @@ public class HomePageScreen extends javax.swing.JFrame {
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         jPanel1 = new javax.swing.JPanel();
         HomePageScreen = new javax.swing.JPanel();
-        backUpBtn = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         homeBtn = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -62,28 +61,15 @@ public class HomePageScreen extends javax.swing.JFrame {
 
         jPanel1.setLayout(new java.awt.CardLayout());
 
-        backUpBtn.setText("Realizar BackUp");
-        backUpBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backUpBtnActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout HomePageScreenLayout = new javax.swing.GroupLayout(HomePageScreen);
         HomePageScreen.setLayout(HomePageScreenLayout);
         HomePageScreenLayout.setHorizontalGroup(
             HomePageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(HomePageScreenLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(backUpBtn)
-                .addContainerGap(664, Short.MAX_VALUE))
+            .addGap(0, 817, Short.MAX_VALUE)
         );
         HomePageScreenLayout.setVerticalGroup(
             HomePageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(HomePageScreenLayout.createSequentialGroup()
-                .addGap(57, 57, 57)
-                .addComponent(backUpBtn)
-                .addContainerGap(463, Short.MAX_VALUE))
+            .addGap(0, 543, Short.MAX_VALUE)
         );
 
         jPanel1.add(HomePageScreen, "HomeCard");
@@ -189,14 +175,6 @@ public class HomePageScreen extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenu2MouseClicked
 
-    //Realizar BackUp
-    private void backUpBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backUpBtnActionPerformed
-        // TODO add your handling code here:
-        
-        BackUp backup = new BackUp(); 
-        backup.executarBackUp();
-    }//GEN-LAST:event_backUpBtnActionPerformed
-
     private void MenuCadastrarFuncActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuCadastrarFuncActionPerformed
         // TODO add your handling code here:
         CadFuncionario CadFunScreen = new CadFuncionario();
@@ -264,7 +242,6 @@ public class HomePageScreen extends javax.swing.JFrame {
     private javax.swing.JMenuItem MenuCadastrarFunc;
     private javax.swing.JMenu MenuFunc;
     private javax.swing.JMenuItem MenuGerenciarFunc;
-    private javax.swing.JButton backUpBtn;
     private javax.swing.JMenu backupBtn;
     private javax.swing.JMenu homeBtn;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
