@@ -1,6 +1,17 @@
 # JavaCrudProject
 Trabalho final disciplina Banco de Dados 2
 
+Para garantir o funcionamento correto é preciso que o banco de dados seja criado com o nome de trabalhoFinal, dessa forma o acesso a ele poderá ser feito sem a necessidade de alterar a aplicação. Caso deseje outro nome, basta alterar a verificação na classe Conexao do pacote util. 
+
+
+Para a realização da funcionalidade de backup, é necessário alterar o path para o local onde deseja que o arquivo seja criado. Além disso o pgdumpPath também precisa ser adaptado conforme o local de origem do pg_dump do usuário. Novamente, caso seja alterado o nome do banco de dados, é importante alterar o valor da variável dbase da classe BackUp para que coincida com o banco de dados.
+
+
+Por fim, crie todas as tabelas e funções e faça a inserção dos dados dos usuários que serão utilizados para acessar o sistema por meio da procedure chamada addUserAndGrantRole(), ela é responsável por adicionar e garantir os privilégios de maneira automática para os usuários. 
+
+A utilização dessa procedure está disponível no arquivo sql_user.
+
+
 # Como Adicionar o Script `dump.bat` ao Task Scheduler do Windows
 
 ## Introdução
@@ -8,10 +19,10 @@ Este guia explica como adicionar um script Bash chamado `dump.bat` ao Agendador 
 
 ## Requisitos
 Antes de iniciar, certifique-se de que:
-- O script `dump.bat` esteja salvo em um local acessível, como `C:\Scripts\dump.bat`.
-- Criar um pasta com o nome `BackUp´ na raiz do disco C
+- O script `dump.bat` esteja salvo em um local acessível como a raiz do projeto.
 - O PostgreSQL esteja instalado e configurado corretamente.
 - O caminho do `pg_dump.exe` esteja correto no script.
+- O caminho da pasta de backups no script esteja configurado e verificar que a pasta existe no caminho.
 
 ## Passo a Passo
 
