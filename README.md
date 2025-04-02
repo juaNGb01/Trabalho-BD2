@@ -1,15 +1,17 @@
 # JavaCrudProject
 Trabalho final disciplina Banco de Dados 2
 
-Para garantir o funcionamento correto é preciso que o banco de dados seja criado com o nome de trabalhoFinal, dessa forma o acesso a ele poderá ser feito sem a necessidade de alterar a aplicação. Caso deseje outro nome, basta alterar a verificação na classe Conexao do pacote util. 
+O objetivo do projeto é criar um sistema para controle de estoque, permitindo que o usuário possa inserir, ler, deletar e atualizar os dados do banco. 
+
+O Trabalho foi realizado em grupo e inteiramente utilizando a linguagem Java juntamente ao framework do java swing para desenvolvimento da interface gráfica. Já na parte de banco foi utilizado PostgresSQL junto a linguagem plpgSQL para auxiliar na criação de funções.
+
+Para garantir o funcionamento correto é preciso que o banco de dados sejam criado com o nome de trabalhoFinal, dessa forma o acesso a ele poderá ser feito sem a necessidade de alterar a aplicação. Caso deseje outro nome, basta alterar a verificação na classe Conexao do pacote util. 
 
 
 Para a realização da funcionalidade de backup, é necessário alterar o path para o local onde deseja que o arquivo seja criado. Além disso o pgdumpPath também precisa ser adaptado conforme o local de origem do pg_dump do usuário. Novamente, caso seja alterado o nome do banco de dados, é importante alterar o valor da variável dbase da classe BackUp para que coincida com o banco de dados.
 
 
-Por fim, crie todas as tabelas e funções e faça a inserção dos dados dos usuários que serão utilizados para acessar o sistema por meio da procedure chamada addUserAndGrantRole(), ela é responsável por adicionar e garantir os privilégios de maneira automática para os usuários. 
-
-A utilização dessa procedure está disponível no arquivo sql_user.
+Por fim, crie todas as tabelas e funções e faça a inserção dos dados dos usuários que serão utilizados para acessar o sistema por meio da procedure chamada addUserAndGrantRole(), ela é responsável por adicionar e garantir os privilégios de maneira automática para os usuários. A utilização dessa procedure está disponível no arquivo sql_user.
 
 
 # Como Adicionar o Script `dump.bat` ao Task Scheduler do Windows
